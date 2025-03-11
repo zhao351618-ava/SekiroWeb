@@ -1,0 +1,116 @@
+
+/* 燃剪 */
+#rjTitle {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, #380303, #d00404);
+    text-align: center;
+}
+.rjTitle_top{
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+}
+.rjTitle_bottom{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #eeeeeea7;
+    font-style: italic;
+}
+.rj{
+    width: 100%;
+    height: 1000px;
+    background: #44a890;
+    background-image: url(/images/wallhaven-wyvjkq.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+
+/* 燃剪————轮播视频 */
+.carousel {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.card-container {
+    position: absolute;
+    left: 23%;
+    width: 100%;
+    height: 600px;
+    transform-style: preserve-3d;
+}
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: all 1s ease;
+}
+.card video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.current {
+    transform: translateX(0) translateZ(0);
+}
+.next {
+    transform: translateX(33.33%) translateZ(-200px) scale(0.8);
+}
+.prev {
+    transform: translateX(-33.33%) translateZ(-200px) scale(0.8);
+}
+
+.rj-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* 调整指示器与轮播的间距 */
+    position: absolute;
+        bottom: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.rj-dot {
+    width: 60px;
+    /* 指示器的宽度 */
+    height: 5px;
+    /* 指示器的高度 */
+    background-color: rgba(255, 255, 255, 0.459);
+    /* 默认背景色 */
+    margin: 0 5px;
+    /* 间距 */
+    cursor: pointer;
+    /* 鼠标悬停变成手型 */
+    transition: background-color 0.3s;
+    /* 渐变效果 */
+}
+
+.rj-dot:hover{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.959);
+}
+/* 扩大判定鼠标悬停范围 */
+.rj-dot::after{
+    content: '';
+    position: absolute;
+    top: -25px;
+    width: 100%;
+    height: 55px;
+}
+
+
+.rj-dot.active {
+    background-color: #ffffff;
+    /* 当前激活的指示器颜色 */
+}

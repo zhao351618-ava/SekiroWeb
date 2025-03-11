@@ -1,0 +1,63 @@
+
+/* 结局 */
+#endingTitle {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, #380303, #d00404);
+    text-align: center;
+}
+#endingTitle_top{
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+}
+#endingTitle_bottom{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #eeeeeea7;
+    font-style: italic;
+} 
+
+#Content {
+    width: 100%;
+    height: auto;
+    background: #999;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 8px solid #b72d2d;
+}
+#Content img {
+    border:8px solid #b72d2d;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#Content-left {
+    width: 25%;
+    height: 1000px;
+    float: left;
+    background: rgb(6, 44, 233);
+    
+}
+#Content-center-left {
+    width: 25%;
+    height: 1000px;
+    float: left;
+    background: rgb(255, 8, 8);
+   
+}
+#Content-center-right {
+    width: 25%;
+    height: 1000px;
+    float: left;
+    background: #112;
+}
+#Content-right {
+    width: 25%;
+    height: 1000px;
+    float: left;
+    background: #222;
+}

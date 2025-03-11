@@ -1,0 +1,160 @@
+
+/* 简介 */
+#introTitle{
+    width: 100%;
+        height: 70px;
+        background: linear-gradient(to right, #380303, #d00404);
+        line-height: 70px;
+        text-align: center;
+}
+.introTitle_top{
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+}
+.introTitle_bottom{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #eeeeeea7;
+    font-style: italic;
+}
+#intro{
+    width: 100%;
+    height: 1000px;
+    background-image: url(/images/wallhaven-zm1wwo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.btn {
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: absolute;
+    top: 10%;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover {
+    color: var(--color2);
+   }
+   
+   .btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
+
+
+
+
+
+/* 简介————遮罩 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.new_content {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    background-image:  url(images/wallhaven-p8jvw9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    color: rgb(220, 210, 210);
+    overflow: hidden;
+}
+.new_content_text{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.3);
+    font-family: '华文新魏';
+    font-size:22px;
+}
+.new_content_text p{
+    margin-top: 30px;
+    
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+#intro_text1,#intro_text2{
+    margin-top: 70px;
+    
+}
+#intro_text3{
+    font-style: italic;
+    color: #9a8b8b;
+    margin-top: 100px;
+    transition: color 0.5s ease;
+}
+#intro_text3:hover{
+    color: #b32121;
+}
+#intro_text4{
+    font-family: '楷体', Courier, monospace;
+    font-size: 30px;
+    margin-top: 150px;
+}

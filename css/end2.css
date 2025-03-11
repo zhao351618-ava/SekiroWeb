@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    /*清除内边距 */
+    padding: 0;
+    /*清除外边距*/
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right,
+            #f0b5cf 0%,
+            #b7b5ff 100%);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}  
+#title {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to right, #380303, #d00404);
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#title a {
+    text-decoration: none;
+}
+
+.title_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo_left {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+#logo_left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h3 {
+    font-family: "汉仪铸字T重", Arial, sans-serif;
+    font-size: 25px;
+    color: #28b3ee;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    font-style: italic;
+}
+
+#title2 {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: linear-gradient(to right, #1e1e2c, #e01009bc);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 48.5px;
+    color: #ea083d;
+    transition: height 0.3s ease-in-out;
+}
+
+#title:hover #title2 {
+    height: 48.5px;
+}
+
+#title2_1,
+#title2_2,
+#title2_3,
+#title2_5,
+#title2_6,
+#title2_7,
+#title2_4 {
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 10px;
+    margin: 7.5px 10px auto auto;
+    border: 1px solid rgb(230, 194, 194);
+    display: inline-block;
+    box-sizing: border-box;
+    background: #851fa4d0;
+    font-weight: 700;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background: #0b9024;
+    background-image: url(/images/【结局】复归常人1.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.m{
+    width: 1000px;
+    height: 663px;
+    border: 3px solid;
+    border-image: linear-gradient(to right, #ff0000bd, #0aafc8bf) 1; 
+}
+.video{
+    width: 1000px;
+    height: 600px;
+    background: #cb1919;
+}
+.text{
+    width: 1000px;
+    height: 60px;
+    background-image: url(/images/190321234914897.jpg);
+    text-align: center;
+    color: #050504;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #ff0000c2, #0aafc8c2) 1;
+}
+.t_top{
+    width: 100%;
+    height: 40px;
+    font-family: '华文新魏', Courier, monospace;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+    color: rgba(213, 19, 19, 0.829);
+}
+.t_bottom{
+    width: 100%;
+    height: 20px;
+    font-family: 'Magneto', Courier, monospace;
+    color: #c04a18c1;
+}
+ video{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.text2{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    font-family: '楷体', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #dad9d6e3;
+}

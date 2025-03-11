@@ -1,0 +1,85 @@
+
+#characterTitle {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, #380303, #d00404);
+    text-align: center;
+}
+.characterTitle_top{
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+}
+.characterTitle_bottom{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #eeeeeea7;
+    font-style: italic;
+} 
+
+/* 外部容器样式 */
+.character {
+    width: 100%;
+    /* 宽度为100% */
+    height: 900px;
+    /* 高度为900px */
+    margin: 0 auto;
+    overflow: hidden;
+    /* 隐藏超出部分 */
+    position: relative;
+    /* 便于定位按钮 */
+}
+
+/* 轮播图容器 */
+.c-carousel {
+    width: 100%;
+    /* 宽度为100% */
+    height: 100%;
+    /* 高度为100% */
+    position: relative;
+}
+
+/* 轮播图中的图片容器 */
+.c-carousel-images {
+    display: flex;
+    /* 水平排列图片 */
+    transition: transform 0.5s ease-in-out;
+    /* 图片切换的过渡效果 */
+}
+
+/* 每张图片的样式 */
+.c-carousel-images img {
+    width: 100%;
+    /* 每张图片宽度撑满容器 */
+    height: 100%;
+    /* 图片高度撑满容器 */
+    object-fit: cover;
+    /* 保持图片比例填充容器 */
+}
+
+/* 控制轮播按钮 */
+.c-carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.c-prev,
+.c-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.c-prev:hover,
+.c-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
